@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Sitemap: https://nss-hbtu.vercel.app/sitemap.xml
+
+# Allow all bots to crawl all content
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-Mobile
+Allow: /
+User-agent: Bingbot
+Allow: / 
