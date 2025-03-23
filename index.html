@@ -49,45 +49,27 @@
     <meta name="twitter:description" content="National Service Scheme at HBTU Kanpur - Fostering youth engagement in community service and social welfare.">
     <meta name="twitter:image" content="img/logo.png">
     <link rel="canonical" href="https://nss-hbtu.vercel.app/>
-
-    <style>
-        #tedxOverlay {
-            transition: opacity 0.3s ease-in-out;
-        }
-        #tedxOverlay .position-relative {
-            padding: 15px;
-            width: 90%;
-            margin: 15px auto;
-        }
-        @media (max-width: 768px) {
-            #tedxOverlay img {
-                max-width: 280px;
-            }
-        }
-        @media (max-width: 576px) {
-            #tedxOverlay img {
-                max-width: 240px;
-            }
-            #tedxOverlay .position-relative {
-                width: 95%;
-                margin: 10px auto;
-            }
-        }
-        @media (max-width: 360px) {
-            #tedxOverlay img {
-                max-width: 200px;
-            }
-        }
-    </style>
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
+        <!-- TEDx Announcement Strip Start -->
+        <div class="tedx-announcement-strip" id="tedxStrip">
+            <div class="tedx-content">
+                <span class="tedx-text">Join us for <span class="tedx-highlight">TEDxHBTU</span> on August 14, 2025 - Ideas Worth Spreading</span>
+                <a href="#" class="btn-tedx">Register Now <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <button class="tedx-close" onclick="document.getElementById('tedxStrip').style.display='none';" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <!-- TEDx Announcement Strip End -->
+        
         <!-- TEDx Banner Overlay Start -->
-        <div class="position-fixed w-100 h-100 d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999; top: 0; left: 0;" id="tedxOverlay">
-            <div class="position-relative" style="width: 90%; max-width: 500px; margin: 15px;">
-                <img src="img/tedxhbtu.png" alt="TEDx HBTU" style="width: 100%; height: auto; display: block;">
-                <button type="button" class="btn-close position-absolute" style="top: -10px; right: -10px; background-color: white;" onclick="document.getElementById('tedxOverlay').remove();" aria-label="Close"></button>
+        <div class="position-fixed w-100 h-100 d-flex justify-content-center align-items-center" id="tedxOverlay">
+            <div class="position-relative">
+                <img src="img/tedxhbtu.png" alt="TEDx HBTU">
+                <button type="button" class="btn-close" onclick="document.getElementById('tedxOverlay').remove();" aria-label="Close"></button>
             </div>
         </div>
         <!-- TEDx Banner Overlay End -->
@@ -616,10 +598,22 @@
     <script src="js/schema.js"></script>
     
     <script>
-        document.querySelector('#tedxOverlay .btn-close').addEventListener('click', function() {
+        // Animate TEDx Overlay removal
+        document.querySelector('#tedxOverlay .btn-close').addEventListener('click', function(e) {
+            e.preventDefault();
             const overlay = document.getElementById('tedxOverlay');
             overlay.style.opacity = '0';
+            overlay.style.transform = 'scale(0.95)';
             setTimeout(() => overlay.remove(), 300);
+        });
+        
+        // Animate TEDx Strip removal
+        document.querySelector('#tedxStrip .tedx-close').addEventListener('click', function(e) {
+            e.preventDefault();
+            const strip = document.getElementById('tedxStrip');
+            strip.style.transform = 'translateY(-100%)';
+            strip.style.transition = 'transform 0.5s ease-in-out';
+            setTimeout(() => strip.style.display = 'none', 500);
         });
     </script>
 </body>

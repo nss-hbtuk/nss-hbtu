@@ -589,3 +589,351 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
+/******** TEDx Styles ********/
+/* TEDx Announcement Strip Styles */
+.tedx-announcement-strip {
+    background: linear-gradient(135deg, var(--primary) 0%, #7740e0 100%);
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+    z-index: 1030;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.tedx-announcement-strip .tedx-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tedx-announcement-strip .tedx-logo {
+    height: 28px;
+    margin-right: 12px;
+    filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.3));
+    transition: transform 0.3s;
+}
+
+.tedx-announcement-strip .tedx-logo:hover {
+    transform: scale(1.05);
+}
+
+.tedx-announcement-strip .tedx-text {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+.tedx-announcement-strip .tedx-highlight {
+    color: var(--secondary);
+    font-weight: 700;
+    font-size: 17px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.tedx-announcement-strip .tedx-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.tedx-announcement-strip .tedx-highlight:hover::after {
+    transform: scaleX(1);
+}
+
+.tedx-announcement-strip .tedx-close {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.tedx-announcement-strip .tedx-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.tedx-announcement-strip .btn-tedx {
+    background: var(--secondary);
+    color: white;
+    padding: 7px 15px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(251, 165, 4, 0.4);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tedx-announcement-strip .btn-tedx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.tedx-announcement-strip .btn-tedx:hover {
+    background-color: #e99700;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(251, 165, 4, 0.5);
+}
+
+.tedx-announcement-strip .btn-tedx:hover::before {
+    left: 100%;
+}
+
+.tedx-announcement-strip .btn-tedx i {
+    font-size: 13px;
+}
+
+/* TEDx Banner Overlay Styles */
+#tedxOverlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#tedxOverlay .position-relative {
+    width: 90%;
+    max-width: 520px;
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    animation: scaleUp 0.5s ease-out 0.2s forwards;
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+#tedxOverlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+}
+
+#tedxOverlay .position-relative:hover img {
+    transform: scale(1.02);
+}
+
+#tedxOverlay .btn-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#tedxOverlay .btn-close::after {
+    content: '×';
+    font-size: 22px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+#tedxOverlay .btn-close:hover {
+    background-color: var(--secondary);
+    transform: rotate(90deg);
+}
+
+@media (max-width: 991px) {
+    .tedx-announcement-strip .tedx-text {
+        font-size: 15px;
+    }
+    
+    .tedx-announcement-strip .tedx-highlight {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tedx-announcement-strip {
+        padding: 12px 15px;
+    }
+    
+    .tedx-announcement-strip .tedx-content {
+        gap: 10px;
+        justify-content: center;
+    }
+    
+    .tedx-announcement-strip .tedx-logo {
+        height: 24px;
+        margin-right: 8px;
+    }
+    
+    .tedx-announcement-strip .tedx-text {
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        order: 2;
+    }
+    
+    .tedx-announcement-strip .tedx-highlight {
+        font-size: 15px;
+    }
+    
+    .tedx-announcement-strip .btn-tedx {
+        font-size: 14px;
+        padding: 6px 14px;
+        order: 3;
+    }
+    
+    .tedx-announcement-strip .tedx-close {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+        right: 10px;
+    }
+    
+    #tedxOverlay .position-relative {
+        width: 95%;
+        max-width: 450px;
+    }
+    
+    #tedxOverlay .btn-close {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .tedx-announcement-strip {
+        padding: 10px;
+    }
+    
+    .tedx-announcement-strip .tedx-content {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .tedx-announcement-strip .tedx-logo {
+        height: 22px;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    
+    .tedx-announcement-strip .tedx-text {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    
+    .tedx-announcement-strip .tedx-highlight {
+        font-size: 14px;
+    }
+    
+    .tedx-announcement-strip .btn-tedx {
+        font-size: 13px;
+        padding: 5px 12px;
+    }
+    
+    #tedxOverlay .position-relative {
+        max-width: 340px;
+    }
+    
+    #tedxOverlay .btn-close {
+        width: 28px;
+        height: 28px;
+        top: -10px;
+        right: -10px;
+    }
+    
+    #tedxOverlay .btn-close::after {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 360px) {
+    .tedx-announcement-strip .tedx-text {
+        font-size: 12px;
+    }
+    
+    .tedx-announcement-strip .tedx-highlight {
+        font-size: 13px;
+    }
+    
+    #tedxOverlay .position-relative {
+        max-width: 300px;
+    }
+}
