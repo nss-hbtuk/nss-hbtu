@@ -49,10 +49,48 @@
     <meta name="twitter:description" content="National Service Scheme at HBTU Kanpur - Fostering youth engagement in community service and social welfare.">
     <meta name="twitter:image" content="img/logo.png">
     <link rel="canonical" href="https://nss-hbtu.vercel.app/>
+
+    <style>
+        #tedxOverlay {
+            transition: opacity 0.3s ease-in-out;
+        }
+        #tedxOverlay .position-relative {
+            padding: 15px;
+            width: 90%;
+            margin: 15px auto;
+        }
+        @media (max-width: 768px) {
+            #tedxOverlay img {
+                max-width: 280px;
+            }
+        }
+        @media (max-width: 576px) {
+            #tedxOverlay img {
+                max-width: 240px;
+            }
+            #tedxOverlay .position-relative {
+                width: 95%;
+                margin: 10px auto;
+            }
+        }
+        @media (max-width: 360px) {
+            #tedxOverlay img {
+                max-width: 200px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
+        <!-- TEDx Banner Overlay Start -->
+        <div class="position-fixed w-100 h-100 d-flex justify-content-center align-items-center" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999; top: 0; left: 0;" id="tedxOverlay">
+            <div class="position-relative" style="width: 90%; max-width: 500px; margin: 15px;">
+                <img src="img/tedxhbtu.png" alt="TEDx HBTU" style="width: 100%; height: auto; display: block;">
+                <button type="button" class="btn-close position-absolute" style="top: -10px; right: -10px; background-color: white;" onclick="document.getElementById('tedxOverlay').remove();" aria-label="Close"></button>
+            </div>
+        </div>
+        <!-- TEDx Banner Overlay End -->
         <!-- Spinner Start -->
         <div id="spinner"
             class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -576,6 +614,14 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/schema.js"></script>
+    
+    <script>
+        document.querySelector('#tedxOverlay .btn-close').addEventListener('click', function() {
+            const overlay = document.getElementById('tedxOverlay');
+            overlay.style.opacity = '0';
+            setTimeout(() => overlay.remove(), 300);
+        });
+    </script>
 </body>
 
 </html>
