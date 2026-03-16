@@ -35,27 +35,56 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <style>
+        /* Equalise all team member cards */
+        .team-item {
+            height: 100%;
+        }
+
+        .team-item .text-center.border-bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-item img.rounded-circle {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            object-position: top center;
+            flex-shrink: 0;
+        }
+    </style>
+
     <!-- Add these meta tags in the head section after the existing meta tags -->
-    <meta name="description" content="National Service Scheme (NSS) at HBTU Kanpur - Fostering youth engagement in community service and social welfare. Join us in making a difference through blood donation camps, cleanliness drives, and social initiatives.">
-    <meta name="keywords" content="NSS HBTU, National Service Scheme, HBTU Kanpur, community service, social welfare, blood donation, cleanliness drive, youth engagement, volunteer work, social initiatives">
+    <meta name="description"
+        content="National Service Scheme (NSS) at HBTU Kanpur - Fostering youth engagement in community service and social welfare. Join us in making a difference through blood donation camps, cleanliness drives, and social initiatives.">
+    <meta name="keywords"
+        content="NSS HBTU, National Service Scheme, HBTU Kanpur, community service, social welfare, blood donation, cleanliness drive, youth engagement, volunteer work, social initiatives">
     <meta name="author" content="NSS HBTU Kanpur">
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="NSS || HBTU Kanpur - Not Me, But You">
-    <meta property="og:description" content="Join NSS HBTU in our mission to promote community service and social welfare. Participate in blood donation camps, cleanliness drives, and various social initiatives.">
+    <meta property="og:description"
+        content="Join NSS HBTU in our mission to promote community service and social welfare. Participate in blood donation camps, cleanliness drives, and various social initiatives.">
     <meta property="og:image" content="img/logo.png">
     <meta property="og:url" content="https://nss-hbtu.vercel.app/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NSS || HBTU Kanpur">
-    <meta name="twitter:description" content="National Service Scheme at HBTU Kanpur - Fostering youth engagement in community service and social welfare.">
+    <meta name="twitter:description"
+        content="National Service Scheme at HBTU Kanpur - Fostering youth engagement in community service and social welfare.">
     <meta name="twitter:image" content="img/logo.png">
     <link rel="canonical" href="https://nss-hbtu.vercel.app/>
-    <script src="js/schema.js"></script>
+    <script src=" js/schema.js">
+    </script>
 
     <!-- TEDxHBTU Event Meta Tags -->
-    <meta name="keywords" content="TEDxHBTU, TED Talk HBTU, TEDx event Kanpur, TEDxHBTU 2025, NSS HBTU TEDx, Ideas Worth Spreading, HBTU Kanpur events, TEDx conference, August 2025 TEDx, Kanpur TEDx talks">
-    <meta name="description" content="Join us for TEDxHBTU 2025, a transformative two-day event on August 14-15, 2025 at HBTU Kanpur. Experience inspiring talks, innovative ideas, and networking opportunities that will change your perspective. Organized by NSS HBTU.">
+    <meta name="keywords"
+        content="TEDxHBTU, TED Talk HBTU, TEDx event Kanpur, TEDxHBTU 2025, NSS HBTU TEDx, Ideas Worth Spreading, HBTU Kanpur events, TEDx conference, August 2025 TEDx, Kanpur TEDx talks">
+    <meta name="description"
+        content="Join us for TEDxHBTU 2025, a transformative two-day event on August 14-15, 2025 at HBTU Kanpur. Experience inspiring talks, innovative ideas, and networking opportunities that will change your perspective. Organized by NSS HBTU.">
     <meta property="og:title" content="TEDxHBTU 2025 | Ideas Worth Spreading | August 14-15">
-    <meta property="og:description" content="TEDxHBTU 2025: A two-day celebration of ideas and innovation at HBTU Kanpur on August 14-15, 2025. Join us for inspiring talks, meaningful connections, and ideas that matter.">
+    <meta property="og:description"
+        content="TEDxHBTU 2025: A two-day celebration of ideas and innovation at HBTU Kanpur on August 14-15, 2025. Join us for inspiring talks, meaningful connections, and ideas that matter.">
     <meta property="og:type" content="event">
     <meta property="og:image" content="img/tedxhbtu.png">
     <meta property="event:start_time" content="2025-08-14T09:00:00+05:30">
@@ -65,7 +94,8 @@
     <meta property="place:location:latitude" content="26.4934">
     <meta property="place:location:longitude" content="80.3074">
     <meta name="twitter:title" content="TEDxHBTU 2025 | August 14-15 | HBTU Kanpur">
-    <meta name="twitter:description" content="Experience TEDxHBTU 2025: Two days of inspiring talks, innovative ideas, and networking at HBTU Kanpur. Register now for this transformative event!">
+    <meta name="twitter:description"
+        content="Experience TEDxHBTU 2025: Two days of inspiring talks, innovative ideas, and networking at HBTU Kanpur. Register now for this transformative event!">
     <meta name="twitter:image" content="img/tedxhbtu.png">
 </head>
 
@@ -95,10 +125,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="programs.html" class="nav-item nav-link">Blogs</a>
-                        <a href="team.html" class="nav-item nav-link">Our Team</a>
+                        <a href="team.html" class="nav-item nav-link active">Our Team</a>
                         <a href="webdteam.html" class="nav-item nav-link">Tech Team</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
@@ -128,14 +158,232 @@
             </div>
         </div>
         <!-- Navbar & Hero End -->
-        
+
 
         <!-- Team Start -->
         <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center"><span></span>Our Team<span></span></p>
+                    <p class="section-title text-secondary justify-content-center"><span></span>Our Team<span></span>
+                    </p>
                     <h1 class="text-center mb-5">Our Team Members</h1>
+                </div>
+                <div class="row g-4 mb-5">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2025/aniket-yadav-sec.jpeg"
+                                    alt="">
+                                <h5>Aniket Yadav</h5>
+                                <span>Student Secretary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2025/Prince-verma-sec.jpeg"
+                                    alt="">
+                                <h5>Prince Verma</h5>
+                                <span>Student Secretary</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2025/sumedha-katiyar-sec.jpeg"
+                                    alt="">
+                                <h5>Sumedha Katiyar</h5>
+                                <span>Student Secretary</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2025/shiva-singh-jointsec.jpeg"
+                                    alt="">
+                                <h5>Shiva Singh</h5>
+                                <span>Joint Secretary</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/prateek-kumar-management.jpeg" alt="">
+                                <h5>Prateek Kumar</h5>
+                                <span>Management Head</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <div
+                                    style="width:180px;height:180px;border-radius:50%;overflow:hidden;margin:0 auto 1rem;">
+                                    <img style="width:100%;height:100%;object-fit:cover;transform:scale(1.2);transform-origin:center top;"
+                                        src="img/TEAM2025/sonali-dubey-management.jpeg" alt="">
+                                </div>
+                                <h5>Sonali Dubey</h5>
+                                <span>Management Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <div
+                                    style="width:180px;height:180px;border-radius:50%;overflow:hidden;margin:0 auto 1rem;">
+                                    <img style="width:100%;height:130%;object-fit:cover;object-position:center top;transform:translateY(-30px);"
+                                        src="img/TEAM2025/Sanskriti-Jaiswal-content.jpeg" alt="">
+                                </div>
+                                <h5>Sanskriti Jaiswal</h5>
+                                <span>Content Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Himanshu-singh-social-media.jpeg" alt=""
+                                    style="object-position: center -100px;">
+                                <h5>Himanshu Singh</h5>
+                                <span>Social Media Head</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Prashant-Pal-social-media.jpeg" alt="">
+                                <h5>Prashant Pal</h5>
+                                <span>Social Media Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <div
+                                    style="width:180px;height:180px;border-radius:50%;overflow:hidden;margin:0 auto 1rem;">
+                                    <img style="width:100%;height:130%;object-fit:cover;object-position:center top;transform:translateY(-25px);"
+                                        src="img/TEAM2025/shubham-mishra-events.jpg" alt="">
+                                </div>
+                                <h5>Shubham Mishra</h5>
+                                <span>Events Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <div
+                                    style="width:180px;height:180px;border-radius:50%;overflow:hidden;margin:0 auto 1rem;">
+                                    <img style="width:100%;height:100%;object-fit:contain;transform:translate(50px, 10px) scale(1.8);transform-origin:center center;"
+                                        src="img/TEAM2025/Prateek-Chaurasiya-treasurer-marketing.jpeg" alt="">
+                                </div>
+                                <h5>Prateek Chaurasiya</h5>
+                                <span>Treasurer & Marketing Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Sanjeet-Tiwari-volunteer-coordination.png" alt="">
+                                <h5>Sanjeet Tiwari</h5>
+                                <span>Volunteer Coordination Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Satyam -Kushwaha-pr-publicity.jpeg" alt="">
+                                <h5>Satyam Kushwaha</h5>
+                                <span>PR & Publicity Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4" src="img/webdev/DevrajEt.jpeg" alt="">
+                                <h5>Devraj</h5>
+                                <span>Technology and Innovation Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Saurabh-Chaubey-operations.webp" alt="">
+                                <h5>Saurabh Chaubey</h5>
+                                <span>Operations Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Shivansh-Pal-logistics.jpeg" alt="">
+                                <h5>Shivansh Pal</h5>
+                                <span>Logistics Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2025/Thakur-Milan-Singh-logistics.jpeg" alt=""
+                                    style="object-position: center -50px;">
+                                <h5>Thakur Milan Singh</h5>
+                                <span>Logistics Head</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item bg-light rounded">
+                            <div class="text-center border-bottom p-4">
+                                <div
+                                    style="width:180px;height:180px;border-radius:50%;overflow:hidden;margin:0 auto 1rem;background:#e0e0e0;">
+                                    <img style="width:100%;height:100%;object-fit:contain;transform:translate(-20px, 20px) scale(1.2);transform-origin:center center;"
+                                        src="img/TEAM2025/ambar-gupta-design.png" alt="">
+                                </div>
+                                <h5>Ambar Gupta</h5>
+                                <span>Design Head</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Our Previous
+                        Team<span></span></p>
+                    <h1 class="text-center mb-5">Our previous team ( 2025-2026)</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -150,7 +398,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Ritham Srivastava-Student Coordinator.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Ritham Srivastava-Student Coordinator.jpg" alt="">
                                 <h5>Ritam Srivastava</h5>
                                 <span>Student Coordinator</span>
                             </div>
@@ -159,7 +408,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Kumari Shalini-Treasurer.jpeg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Kumari Shalini-Treasurer.jpeg" alt="">
                                 <h5>Kumari Shalini</h5>
                                 <span>Treasurer</span>
                             </div>
@@ -168,7 +418,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Abhishek Tiwari-Treasurer.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Abhishek Tiwari-Treasurer.jpg" alt="">
                                 <h5>Abhishek Tiwari</h5>
                                 <span>Treasurer</span>
                             </div>
@@ -177,7 +428,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Astha Gupta-Event Management Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Astha Gupta-Event Management Head.jpg" alt="">
                                 <h5>Astha Gupta</h5>
                                 <span>Event Head</span>
                             </div>
@@ -186,7 +438,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Aviral Srivastava Design.jpeg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Aviral Srivastava Design.jpeg" alt="">
                                 <h5>Aviral Srivastava</h5>
                                 <span>Design Head</span>
                             </div>
@@ -195,7 +448,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Raghav Sumit-Design Head.jpeg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Raghav Sumit-Design Head.jpeg" alt="">
                                 <h5>Raghav Sumit</h5>
                                 <span>Design Head</span>
                             </div>
@@ -204,7 +458,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Krishangi Agarwal-Content Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Krishangi Agarwal-Content Head.jpg" alt="">
                                 <h5>Krishangi Agarwal</h5>
                                 <span>Content Head</span>
                             </div>
@@ -213,7 +468,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Harsh Pratap Singh-Volunteer Coordinatorjpg.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Harsh Pratap Singh-Volunteer Coordinatorjpg.jpg" alt="">
                                 <h5>Harsh Pratap Singh</h5>
                                 <span>Volunteer Coordinator</span>
                             </div>
@@ -222,7 +478,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Aviral Kalra-Publicity Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Aviral Kalra-Publicity Head.jpg" alt="">
                                 <h5>Aviral Kalra</h5>
                                 <span>Publicity Head</span>
                             </div>
@@ -231,7 +488,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Ayushman Pal-Operation Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Ayushman Pal-Operation Head.jpg" alt="">
                                 <h5>Ayushman Pal</h5>
                                 <span>Operation Head</span>
                             </div>
@@ -240,7 +498,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Manas Dixit -Public Relations Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Manas Dixit -Public Relations Head.jpg" alt="">
                                 <h5>Manas Dixit</h5>
                                 <span>Public Relations Head</span>
                             </div>
@@ -249,7 +508,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Raj Kumar Sipaliya-Public Relations Head BTech (1).webp" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Raj Kumar Sipaliya-Public Relations Head BTech (1).webp" alt="">
                                 <h5>Raj Kumar Sipaliya</h5>
                                 <span>Public Relations Head</span>
                             </div>
@@ -258,7 +518,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Rishabh Sharma-Tech and Innovation Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Rishabh Sharma-Tech and Innovation Head.jpg" alt="">
                                 <h5>Rishabh Sharma</h5>
                                 <span>Technology and Innovation Head</span>
                             </div>
@@ -267,7 +528,8 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/TEAM2024/Sarvesh Kumar-Logistic Head.jpg" alt="">
+                                <img class="img-fluid rounded-circle mb-4"
+                                    src="img/TEAM2024/Sarvesh Kumar-Logistic Head.jpg" alt="">
                                 <h5>Sarvesh Kumar</h5>
                                 <span>Logistics Head</span>
                             </div>
@@ -277,7 +539,7 @@
             </div>
         </div>
         <!-- Team End -->
-        
+
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">

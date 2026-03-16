@@ -70,17 +70,7 @@
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- TEDx Announcement Strip Start -->
-        <div class="tedx-announcement-strip" id="tedxStrip">
-            <div class="tedx-content">
-                <span class="tedx-text">Join us for <span class="tedx-highlight">TEDxHBTU</span> on August 14, 2025 - Ideas Worth Spreading</span>
-                <a href="#" class="btn-tedx">Register Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <button class="tedx-close" onclick="document.getElementById('tedxStrip').style.display='none';" aria-label="Close">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <!-- TEDx Announcement Strip End -->
+
         
         <!-- TEDx Banner Overlay Start -->
         <div class="position-fixed w-100 h-100 d-flex justify-content-center align-items-center" id="tedxOverlay">
@@ -501,11 +491,11 @@
                             forward to further strengthening our efforts and making a lasting impact on society through
                             service and dedication not only in HBTU but also beyond HBTU.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/TEAM2024/AryanTiwari.jpg"
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/TEAM2025/aniket-yadav-sec.jpeg"
                                 style="width: 65px; height: 65px;">
                             <div class="ps-4">
                                 <a href="https://www.linkedin.com/in/aryan-tiwari-1533b5250">
-                                    <h5 class="mb-1">Aryan Tiwari</h5>
+                                    <h5 class="mb-1">Aniket Yadav</h5>
                                 </a>
                                 <span>Student Secretary</span>
                             </div>
@@ -624,14 +614,6 @@
             setTimeout(() => overlay.remove(), 300);
         });
         
-        // Animate TEDx Strip removal
-        document.querySelector('#tedxStrip .tedx-close').addEventListener('click', function(e) {
-            e.preventDefault();
-            const strip = document.getElementById('tedxStrip');
-            strip.style.transform = 'translateY(-100%)';
-            strip.style.transition = 'transform 0.5s ease-in-out';
-            setTimeout(() => strip.style.display = 'none', 500);
-        });
     </script>
 </body>
 
